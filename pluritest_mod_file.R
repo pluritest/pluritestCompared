@@ -94,7 +94,7 @@ pluritest_mod<-function(file1,NormOnly=FALSE) {
   #sink()
   return(table.results[,])
 }
-
+colram = colorRampPalette(c("red", "pink1", "aliceblue", "lightblue", "blue"), bias = 1)
 
 predictH<-function(eset, W) {
   H <- matrix(0, nrow = ncol(W), ncol = ncol(eset))
