@@ -17,7 +17,7 @@ source('~/sourcehome/submission/pluritest_mod_file.R')
 
 # load the data using patched version of original pluritest script.
 # NormOnly provides only a normalized lumi object. 
-working.lumi1<-pluritest_mod(".working/forLumi.txt",NormOnly = TRUE)
+working.lumi1<-pluritest_mod("./working/forLumi.txt",NormOnly = TRUE)
 
 # Add a simple Correction Factor to the Pluritest Modelmatrices
 # This is very simple version of factor based batch effect removal as in RUV or SVA
