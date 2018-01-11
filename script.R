@@ -34,5 +34,5 @@ W12<-cbind(W12,shifttemp)
 
 # run pluritest with correction
 # Normalization is performed with a Target, so no cross sample effects other than through correction factor
-res<-pluritest_mod("./forLumi.txt")
+res<-pluritest_mod("./working/forLumi.txt")
 
