@@ -1,0 +1,45 @@
+setwd("./working")
+pdf(file="Fig1.pdf",width=10,height=10)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency")
+
+points(res[,c(3,1)],cex=1.6,col="darkorange")
+abline(h=20,lty=3);abline(v=1.67,lty=3)
+dev.off()
+  
+pdf(file="Fig2.pdf",width=10,height=10)
+par(mfrow=c(3,2))
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="WA09")
+points(res[WA09,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="Kyoto")
+points(res[Kyoto,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="UKSCB")
+points(res[UKSCB,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="Murdoch")
+points(res[Murdoch,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="Wicell")
+points(res[Wicell,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+dev.off()
+
+
+
+
+pdf(file="Fig2_labels.pdf",width=10,height=10)
+par(mfrow=c(3,2))
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="WA09")
+points(res[WA09,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+text(res[WA09,c(3,1)],labels = WA09,cex=.5)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="Kyoto")
+points(res[Kyoto,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+text(res[Kyoto,c(3,1)],labels = Kyoto,cex=.7)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="UKSCB")
+points(res[UKSCB,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+text(res[UKSCB,c(3,1)],labels = UKSCB,cex=.7)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="Murdoch")
+points(res[Murdoch,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+text(res[Murdoch,c(3,1)],labels = Murdoch,cex=.7)
+image(y = c(-129:70), x = c((1:200)/50),z= background129_70x1_4,col=colram(50),xlab = "novelty", ylab = "pluripotency",ylim=c(10,60),xlim=c(0,2.),main="Wicell")
+points(res[Wicell,c(3,1)],ylim=c(10,60),xlim=c(0,2),cex=1.6);abline(h=20,lty=3);abline(v=1.67,lty=3)
+text(res[Wicell,c(3,1)],labels = Wicell,cex=.7)
+dev.off()
+
+
