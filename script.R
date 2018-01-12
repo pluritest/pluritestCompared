@@ -13,7 +13,7 @@ Wicell<-  c("WA14_r1_JB","WA14_r2_JB","DF19.9.11T_4_r1_JB","DF19.9.11T_4_r2_JB",
 # load the modified pluritest script 
 # functionality has been removed to allow R2.11 - R 3.x compatibility 
 # different output handling. Original is available in original workspace
-source('~/sourcehome/submission/pluritest_mod_file.R')
+source('./pluritest_mod_file.R')
 
 # load the data using patched version of original pluritest script.
 # NormOnly provides only a normalized lumi object. 
